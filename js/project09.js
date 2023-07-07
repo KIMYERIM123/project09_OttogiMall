@@ -18,6 +18,8 @@ $(function () {
     arrows: false,
     autoplay: true,
     autoplayspeed: 5000,
+    dots: true,
+
   });
 
   //롤링 배너 복제본 생성
@@ -48,7 +50,7 @@ $(function () {
   });
 
   function updateTimer() {
-    const future = Date.parse("2023/07/06 23:00:00");
+    const future = Date.parse("2023/07/07 18:20:00");
     const now = new Date();
     const diff = future - now;
 
@@ -81,6 +83,7 @@ $(function () {
   $(".main_sale .sale_slide").slick({
     slidesToShow: 4,
     arrows: false,
+    autoplay: true,
   });
 
   $(".main_sale .arrows .left").on("click", function () {

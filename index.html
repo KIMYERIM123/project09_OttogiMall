@@ -1,656 +1,658 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>project09 OttogiMall</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/font.css" />
-    <link rel="stylesheet" href="./css/aos.css" />
-    <link rel="stylesheet" href="./css/slick.css" />
-    <link rel="stylesheet" href="./css/project09.css" />
 
-    <script src="./js/jquery-1.12.4.min.js"></script>
-    <script src="./js/aos.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/project09.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>project09 OttogiMall</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/font.css" />
+  <link rel="stylesheet" href="./css/aos.css" />
+  <link rel="stylesheet" href="./css/slick.css" />
+  <link rel="stylesheet" href="./css/project09.css" />
 
-  <body>
-    <header class="header">
-      <div class="header_top">
-        <div class="top_inner">
-          <span>회원가입 시 적립금 1천원 지급!</span>
-          <i class="xi-close"></i>
-        </div>
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="./js/aos.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/project09.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header_top">
+      <div class="top_inner">
+        <span>회원가입 시 적립금 1천원 지급!</span>
+        <i class="xi-close"></i>
       </div>
-      <div class="header_middle">
-        <div class="middle_inner">
-          <h1>
-            <a href="">
-              <img src="./img/header_logo.svg" alt="" />
-            </a>
-            <span>오뚜기몰 LOGO</span>
-          </h1>
-          <ul>
-            <li><a href="">회원가입</a></li>
-            <li><a href="">로그인</a></li>
-            <li><a href="">고객센터</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="header_bottom">
-        <div class="bottom_inner">
-          <div class="category">
-            <div class="category_box">
-              <i class="xi-bars"></i>
-              <span>제품 카데고리</span>
-            </div>
-            <div class="category_list">
-              <ul class="depth01">
-                <li><a href="">무료배송</a></li>
-                <li>
-                  <a href="">라면/컵누들/곤누들</a>
-                  <div class="category_sub">
-                    <ul class="depth02">
-                      <li><a href="">봉지라면</a></li>
-                      <li><a href="">컵라면</a></li>
-                      <li><a href="">컵누들</a></li>
-                      <li><a href="">라면스프</a></li>
-                      <li><a href="">곤누들</a></li>
-                      <li><a href="">잡채</a></li>
-                      <li><a href="">사리면</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="">밥/죽/누룽지</a>
-                  <div class="category_sub">
-                    <ul class="depth02">
-                      <li><a href="">즉석밥</a></li>
-                      <li><a href="">컵밥</a></li>
-                      <li><a href="">죽</a></li>
-                      <li><a href="">잡곡밥</a></li>
-                      <li><a href="">누룽지</a></li>
-                      <li><a href="">냉동볶음밥</a></li>
-                      <li><a href="">밥친구</a></li>
-                      <li><a href="">곤약밥</a></li>
-                      <li><a href="">오뚜기쌀</a></li>
-                      <li><a href="">주먹밥/무스비</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="">카레/짜장/스프/간편렌지</a>
-                  <div class="category_sub">
-                    <ul class="depth02">
-                      <li><a href="">카레/짜장/하이스</a></li>
-                      <li><a href="">스프</a></li>
-                      <li><a href="">미트/햄버거/치킨/탕수완자</a></li>
-                      <li><a href="">덮밥소스</a></li>
-                      <li><a href="">간편찜</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="">소스/드레싱/양념/식초</a>
-                  <div class="category_sub">
-                    <ul class="depth02">
-                      <li><a href="">케찹/마요/드레싱</a></li>
-                      <li><a href="">타바스코/이금기/라조장</a></li>
-                      <li><a href="">식초/미향</a></li>
-                      <li><a href="">간편소스/볶음/조림양념</a></li>
-                      <li><a href="">후추/허브솔트</a></li>
-                      <li><a href="">겨지/와사비</a></li>
-                      <li><a href="">육류소스/비빔장/초고추장</a></li>
-                      <li><a href="">파스타/스파게티 소스</a></li>
-                      <li><a href="">스테이스/돈까스 소스</a></li>
-                      <li><a href="">탕/찌개 양념</a></li>
-                      <li><a href="">물엿/쌀엿/올리고당/요리청</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="">탕/국/찌개/간편조리</a>
-                  <div class="category_sub">
-                    <ul class="depth02">
-                      <li><a href="">탕/국/찌개</a></li>
-                      <li><a href="">간편국/육수</a></li>
-                      <li><a href="">생선구이</a></li>
-                      <li><a href="">브리또/크로크무슈</a></li>
-                      <li><a href="">안주/튀김</a></li>
-                      <li><a href="">밀키트</a></li>
-                      <li><a href="">간편조리</a></li>
-                      <li><a href="">돈까스</a></li>
-                      <li><a href="">칼국수</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="">피자/파스타/만두/치킨</a>
-                  <div class="category_sub">
-                    <ul class="depth02">
-                      <li><a href="">피자</a></li>
-                      <li><a href="">만두</a></li>
-                      <li><a href="">치킨</a></li>
-                      <li><a href="">딤성</a></li>
-                      <li><a href="">리조또</a></li>
-                      <li><a href="">만두피</a></li>
-                      <li><a href="">피클</a></li>
-                      <li><a href="">또띠아</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="">가루/향신료</a>
-                  <div class="category_sub">
-                    <ul class="depth02">
-                      <li><a href="">카레/짜장</a></li>
-                      <li><a href="">간편믹스</a></li>
-                      <li><a href="">분말스프</a></li>
-                      <li><a href="">튀김/부침/빵가루</a></li>
-                      <li><a href="">분말죽</a></li>
-                      <li><a href="">하이스</a></li>
-                      <li><a href="">요리용 가루</a></li>
-                      <li><a href="">향신료</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="">캔/통조림/오일</a>
-                  <div class="category_sub">
-                    <ul class="depth02">
-                      <li><a href="">참치</a></li>
-                      <li><a href="">스위트콘/과일통조림</a></li>
-                      <li><a href="">참기름/들기름</a></li>
-                      <li><a href="">고추맛기름/볶음참개</a></li>
-                      <li><a href="">햄</a></li>
-                      <li><a href="">콩기름/옥수수유</a></li>
-                      <li><a href="">꽁치/고등어</a></li>
-                      <li><a href="">올리브유</a></li>
-                      <li><a href="">카놀라유</a></li>
-                      <li><a href="">포도씨유</a></li>
-                      <li><a href="">해바라기유</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="">김/미역/수산물</a>
-                  <div class="category_sub">
-                    <ul class="depth02">
-                      <li><a href="">미역</a></li>
-                      <li><a href="">다시마</a></li>
-                      <li><a href="">김</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="">쨈/시럽/다류/마가린</a>
-                  <div class="category_sub">
-                    <ul class="depth02">
-                      <li><a href="">분말차</a></li>
-                      <li><a href="">쨈</a></li>
-                      <li><a href="">시럽</a></li>
-                      <li><a href="">액상차</a></li>
-                      <li><a href="">침출차</a></li>
-                      <li><a href="">마말레이드</a></li>
-                      <li><a href="">마가린</a></li>
-                      <li><a href="">치즈</a></li>
-                      <li><a href="">버터</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="">떡볶이/핫도그/간식</a>
-                  <div class="category_sub">
-                    <ul class="depth02">
-                      <li><a href="">스낵</a></li>
-                      <li><a href="">핫도그</a></li>
-                      <li><a href="">떡국떡</a></li>
-                      <li><a href="">간식</a></li>
-                      <li><a href="">떡볶이</a></li>
-                      <li><a href="">떡볶이 소스</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="">국수/당면/면류</a>
-                  <div class="category_sub">
-                    <ul class="depth02">
-                      <li><a href="">파스타/스파게티 면</a></li>
-                      <li><a href="">국수/국수장국</a></li>
-                      <li><a href="">사리면</a></li>
-                      <li><a href="">냉동면요리</a></li>
-                      <li><a href="">물/비빔냉면</a></li>
-                      <li><a href="">쫄면</a></li>
-                      <li><a href="">짜장/짬뽕</a></li>
-                      <li><a href="">우동</a></li>
-                      <li><a href="">콩국수</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="">강황환/홍삼/프로틴/선물</a>
-                  <div class="category_sub">
-                    <ul class="depth02">
-                      <li><a href="">낫또</a></li>
-                      <li><a href="">선물세트</a></li>
-                      <li><a href="">오뚜기프트</a></li>
-                      <li><a href="">백세강황환</a></li>
-                      <li><a href="">홍상</a></li>
-                      <li><a href="">손소독액</a></li>
-                      <li><a href="">살균소독제</a></li>
-                      <li><a href="">프로틴</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="">굿즈</a>
-                  <div class="category_sub">
-                    <ul class="depth02">
-                      <li><a href="">생활용품</a></li>
-                      <li><a href="">악세서리</a></li>
-                      <li><a href="">장난감</a></li>
-                      <li><a href="">패션의류</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li><a href="">즉시/쿠폰 할인상품</a></li>
-                <li><a href="">기획팩</a></li>
-                <li><a href="">오뚜기 창립기념일</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <nav class="gnb">
-            <ul>
-              <li><a href="">신제품</a></li>
-              <li><a href="">HEY!</a></li>
-              <li><a href="">이벤트</a></li>
-              <li><a href="">브랜드관</a></li>
-              <li><a href="">베스트</a></li>
-            </ul>
-          </nav>
-
-          <div class="search">
-            <form method="get" action="f">
-              <input
-                type="text"
-                placeholder="복작복작 짜슐랭 먹어보는건 어때요?"
-              />
-              <button>
-                <i class="xi-search"></i>
-              </button>
-            </form>
-          </div>
-
-          <div class="bottom_icon">
-            <a href=""><i class="xi-user-o"></i></a>
-            <a href=""><i class="xi-heart-o"></i></a>
-            <a href=""
-              ><i class="xi-cart-o dd">
-                <small>0</small>
-              </i></a
-            >
-          </div>
-        </div>
-      </div>
-    </header>
-    <main>
-      <section class="mainvisual">
-        <div class="mainslide">
-          <div class="itm itm01">
-            <div class="itm_slogan">
-              <p class="slo_tit">
-                유난히 입맛 없는 날엔<br />
-                스프 한 스푼 드셔보세요.
-              </p>
-              <p class="slo_con">
-                입맛 없는 날 따뜻한 스프 어때요?<br />
-                마음까지 따뜻해 지도록 최대 50% 할인해요.
-              </p>
-            </div>
-          </div>
-          <div class="itm itm02">
-            <div class="itm_slogan">
-              <p class="slo_tit">
-                비건도 맛있게,<br />
-                헬로 베지 :-)
-              </p>
-              <p class="slo_con">
-                건강을 생각하는 비건,<br />
-                누구나 쉽게 간단하게!
-              </p>
-            </div>
-          </div>
-          <div class="itm itm03">
-            <div class="itm_slogan">
-              <p class="slo_tit">
-                화제의 히모카와 우동까지<br />
-                오뚜기몰엔 다 있어요!
-              </p>
-              <p class="slo_con">
-                요리하기도 더운 날씨엔 간편한 한그릇<br />
-                20% 할인으로 시원하게 만나요.
-              </p>
-            </div>
-          </div>
-          <div class="itm itm04">
-            <div class="itm_slogan">
-              <p class="slo_tit">
-                오뚜기에 이런 면도 있어요!<br />
-                지금만 맛보는 한정라면
-              </p>
-              <p class="slo_con">
-                더워진 날씨에<br />
-                시원한 면요리 한그릇 어때요?
-              </p>
-            </div>
-          </div>
-          <div class="itm itm05">
-            <div class="itm_slogan">
-              <p class="slo_tit">
-                내 몸도 마음도<br />
-                가벼워지는 쉬운 방법
-              </p>
-              <p class="slo_con">
-                끝까지 사용해 더 깨끗한 용기로 재활용!<br />
-                하프 케찹/마요로 칼로리도 가볍게
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="main_category">
-        <div class="category_inner">
-          <ul>
-            <li>
-              <a href="">
-                <img src="./img/icon01.png" alt="" />
-                <span>할인상품</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="./img/icon02.png" alt="" />
-                <span>무료배송</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="./img/icon03.png" alt="" />
-                <span>복작복작</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="./img/icon04.png" alt="" />
-                <span>제주담음</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="./img/icon05.png" alt="" />
-                <span>오뮤</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="./img/icon06.png" alt="" />
-                <span>오뚜기프트</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="./img/icon07.png" alt="" />
-                <span>X.O.만두</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="./img/icon08.png" alt="" />
-                <span>타바스코</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="./img/icon09.png" alt="" />
-                <span>옛날</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="./img/icon10.png" alt="" />
-                <span>3분</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="main_best">
-        <div class="title">
-          <h2>지금 가장 잘 팔려요!</h2>
+    </div>
+    <div class="header_middle">
+      <div class="middle_inner">
+        <h1>
           <a href="">
-            <span>전체보기</span>
-            <i class="xi-angle-right-min"></i>
+            <img src="./img/header_logo.svg" alt="" />
           </a>
-        </div>
-        <div class="wrap">
-          <div class="best_content">
-            <ul>
+          <span>오뚜기몰 LOGO</span>
+        </h1>
+        <ul>
+          <li><a href="">회원가입</a></li>
+          <li><a href="">로그인</a></li>
+          <li><a href="">고객센터</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header_bottom">
+      <div class="bottom_inner">
+        <div class="category">
+          <div class="category_box">
+            <i class="xi-bars"></i>
+            <span>제품 카데고리</span>
+          </div>
+          <div class="category_list">
+            <ul class="depth01">
+              <li><a href="">무료배송</a></li>
               <li>
-                <a href="">
-                  <div class="itm itm01">
-                    <img src="./img/best01.jpg" alt="" />
-                    <p>오뮤 가뿐한끼 현미밥 150G</p>
-                    <strong>1,180</strong>
-                    <span>원</span>
-                  </div>
-                </a>
-                <div class="icon">
-                  <span class="B">BEST</span>
-                  <i class="xi-heart-o heart"></i>
-                  <i class="xi-cart-o cart"></i>
+                <a href="">라면/컵누들/곤누들</a>
+                <div class="category_sub">
+                  <ul class="depth02">
+                    <li><a href="">봉지라면</a></li>
+                    <li><a href="">컵라면</a></li>
+                    <li><a href="">컵누들</a></li>
+                    <li><a href="">라면스프</a></li>
+                    <li><a href="">곤누들</a></li>
+                    <li><a href="">잡채</a></li>
+                    <li><a href="">사리면</a></li>
+                  </ul>
                 </div>
               </li>
               <li>
-                <a href="">
-                  <div class="itm itm02">
-                    <img src="./img/best02.jpg" alt="" />
-                    <p>진라면 매운맛 (120G x 5)</p>
-                    <strong>3,980</strong>
-                    <span>원</span>
-                  </div>
-                </a>
-                <div class="icon">
-                  <span class="B">BEST</span>
-                  <i class="xi-heart-o heart"></i>
-                  <i class="xi-cart-o cart"></i>
+                <a href="">밥/죽/누룽지</a>
+                <div class="category_sub">
+                  <ul class="depth02">
+                    <li><a href="">즉석밥</a></li>
+                    <li><a href="">컵밥</a></li>
+                    <li><a href="">죽</a></li>
+                    <li><a href="">잡곡밥</a></li>
+                    <li><a href="">누룽지</a></li>
+                    <li><a href="">냉동볶음밥</a></li>
+                    <li><a href="">밥친구</a></li>
+                    <li><a href="">곤약밥</a></li>
+                    <li><a href="">오뚜기쌀</a></li>
+                    <li><a href="">주먹밥/무스비</a></li>
+                  </ul>
                 </div>
               </li>
               <li>
-                <a href="">
-                  <div class="itm itm03">
-                    <img src="./img/best03.jpg" alt="" />
-                    <p>오뚜기밥 210G</p>
-                    <strong>1,380</strong>
-                    <span>원</span>
-                  </div>
-                </a>
-                <div class="icon">
-                  <span class="A">인기</span>
-                  <i class="xi-heart-o heart"></i>
-                  <i class="xi-cart-o cart"></i>
+                <a href="">카레/짜장/스프/간편렌지</a>
+                <div class="category_sub">
+                  <ul class="depth02">
+                    <li><a href="">카레/짜장/하이스</a></li>
+                    <li><a href="">스프</a></li>
+                    <li><a href="">미트/햄버거/치킨/탕수완자</a></li>
+                    <li><a href="">덮밥소스</a></li>
+                    <li><a href="">간편찜</a></li>
+                  </ul>
                 </div>
               </li>
               <li>
-                <a href="">
-                  <div class="itm itm04">
-                    <div class="img_box">
-                      <img src="./img/best04.jpg" alt="" />
-                    </div>
-                    <p>히모카와우동 2인 396G</p>
-                    <strong>7,480</strong>
-                    <span>원</span>
-                  </div>
-                </a>
-                <div class="icon">
-                  <span class="B">BEST</span>
-                  <i class="xi-heart-o heart"></i>
-                  <i class="xi-cart-o cart"></i>
+                <a href="">소스/드레싱/양념/식초</a>
+                <div class="category_sub">
+                  <ul class="depth02">
+                    <li><a href="">케찹/마요/드레싱</a></li>
+                    <li><a href="">타바스코/이금기/라조장</a></li>
+                    <li><a href="">식초/미향</a></li>
+                    <li><a href="">간편소스/볶음/조림양념</a></li>
+                    <li><a href="">후추/허브솔트</a></li>
+                    <li><a href="">겨지/와사비</a></li>
+                    <li><a href="">육류소스/비빔장/초고추장</a></li>
+                    <li><a href="">파스타/스파게티 소스</a></li>
+                    <li><a href="">스테이스/돈까스 소스</a></li>
+                    <li><a href="">탕/찌개 양념</a></li>
+                    <li><a href="">물엿/쌀엿/올리고당/요리청</a></li>
+                  </ul>
                 </div>
               </li>
               <li>
-                <a href="">
-                  <div class="itm itm05">
-                    <img src="./img/best05.jpg" alt="" />
-                    <p>육개장 컵 104G</p>
-                    <strong>900</strong>
-                    <span>원</span>
-                  </div>
-                </a>
-                <div class="icon">
-                  <span class="A">인기</span>
-                  <i class="xi-heart-o heart"></i>
-                  <i class="xi-cart-o cart"></i>
+                <a href="">탕/국/찌개/간편조리</a>
+                <div class="category_sub">
+                  <ul class="depth02">
+                    <li><a href="">탕/국/찌개</a></li>
+                    <li><a href="">간편국/육수</a></li>
+                    <li><a href="">생선구이</a></li>
+                    <li><a href="">브리또/크로크무슈</a></li>
+                    <li><a href="">안주/튀김</a></li>
+                    <li><a href="">밀키트</a></li>
+                    <li><a href="">간편조리</a></li>
+                    <li><a href="">돈까스</a></li>
+                    <li><a href="">칼국수</a></li>
+                  </ul>
                 </div>
               </li>
               <li>
-                <a href="">
-                  <div class="itm itm06">
-                    <img src="./img/best06.jpg" alt="" />
-                    <p>참깨라면 용기 110G</p>
-                    <strong>1,280</strong>
-                    <span>원</span>
-                  </div>
-                </a>
-                <div class="icon">
-                  <span class="A">인기</span>
-                  <i class="xi-heart-o heart"></i>
-                  <i class="xi-cart-o cart"></i>
+                <a href="">피자/파스타/만두/치킨</a>
+                <div class="category_sub">
+                  <ul class="depth02">
+                    <li><a href="">피자</a></li>
+                    <li><a href="">만두</a></li>
+                    <li><a href="">치킨</a></li>
+                    <li><a href="">딤성</a></li>
+                    <li><a href="">리조또</a></li>
+                    <li><a href="">만두피</a></li>
+                    <li><a href="">피클</a></li>
+                    <li><a href="">또띠아</a></li>
+                  </ul>
                 </div>
               </li>
               <li>
-                <a href="">
-                  <div class="itm itm07">
-                    <img src="./img/best07.jpg" alt="" />
-                    <p>옛날 사골곰탕 350G</p>
-                    <strong>1,380</strong>
-                    <span>원</span>
-                  </div>
-                </a>
-                <div class="icon">
-                  <span class="B">BEST</span>
-                  <i class="xi-heart-o heart"></i>
-                  <i class="xi-cart-o cart"></i>
+                <a href="">가루/향신료</a>
+                <div class="category_sub">
+                  <ul class="depth02">
+                    <li><a href="">카레/짜장</a></li>
+                    <li><a href="">간편믹스</a></li>
+                    <li><a href="">분말스프</a></li>
+                    <li><a href="">튀김/부침/빵가루</a></li>
+                    <li><a href="">분말죽</a></li>
+                    <li><a href="">하이스</a></li>
+                    <li><a href="">요리용 가루</a></li>
+                    <li><a href="">향신료</a></li>
+                  </ul>
                 </div>
               </li>
               <li>
-                <a href="">
-                  <div class="itm itm08">
-                    <img src="./img/best08.jpg" alt="" />
-                    <p>컵밥 톡톡김치알밥(증량) 222G</p>
-                    <strong>2,500</strong>
-                    <span>원</span>
-                  </div>
-                </a>
-                <div class="icon">
-                  <span class="B">BEST</span>
-                  <i class="xi-heart-o heart"></i>
-                  <i class="xi-cart-o cart"></i>
+                <a href="">캔/통조림/오일</a>
+                <div class="category_sub">
+                  <ul class="depth02">
+                    <li><a href="">참치</a></li>
+                    <li><a href="">스위트콘/과일통조림</a></li>
+                    <li><a href="">참기름/들기름</a></li>
+                    <li><a href="">고추맛기름/볶음참개</a></li>
+                    <li><a href="">햄</a></li>
+                    <li><a href="">콩기름/옥수수유</a></li>
+                    <li><a href="">꽁치/고등어</a></li>
+                    <li><a href="">올리브유</a></li>
+                    <li><a href="">카놀라유</a></li>
+                    <li><a href="">포도씨유</a></li>
+                    <li><a href="">해바라기유</a></li>
+                  </ul>
                 </div>
               </li>
+              <li>
+                <a href="">김/미역/수산물</a>
+                <div class="category_sub">
+                  <ul class="depth02">
+                    <li><a href="">미역</a></li>
+                    <li><a href="">다시마</a></li>
+                    <li><a href="">김</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="">쨈/시럽/다류/마가린</a>
+                <div class="category_sub">
+                  <ul class="depth02">
+                    <li><a href="">분말차</a></li>
+                    <li><a href="">쨈</a></li>
+                    <li><a href="">시럽</a></li>
+                    <li><a href="">액상차</a></li>
+                    <li><a href="">침출차</a></li>
+                    <li><a href="">마말레이드</a></li>
+                    <li><a href="">마가린</a></li>
+                    <li><a href="">치즈</a></li>
+                    <li><a href="">버터</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="">떡볶이/핫도그/간식</a>
+                <div class="category_sub">
+                  <ul class="depth02">
+                    <li><a href="">스낵</a></li>
+                    <li><a href="">핫도그</a></li>
+                    <li><a href="">떡국떡</a></li>
+                    <li><a href="">간식</a></li>
+                    <li><a href="">떡볶이</a></li>
+                    <li><a href="">떡볶이 소스</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="">국수/당면/면류</a>
+                <div class="category_sub">
+                  <ul class="depth02">
+                    <li><a href="">파스타/스파게티 면</a></li>
+                    <li><a href="">국수/국수장국</a></li>
+                    <li><a href="">사리면</a></li>
+                    <li><a href="">냉동면요리</a></li>
+                    <li><a href="">물/비빔냉면</a></li>
+                    <li><a href="">쫄면</a></li>
+                    <li><a href="">짜장/짬뽕</a></li>
+                    <li><a href="">우동</a></li>
+                    <li><a href="">콩국수</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="">강황환/홍삼/프로틴/선물</a>
+                <div class="category_sub">
+                  <ul class="depth02">
+                    <li><a href="">낫또</a></li>
+                    <li><a href="">선물세트</a></li>
+                    <li><a href="">오뚜기프트</a></li>
+                    <li><a href="">백세강황환</a></li>
+                    <li><a href="">홍상</a></li>
+                    <li><a href="">손소독액</a></li>
+                    <li><a href="">살균소독제</a></li>
+                    <li><a href="">프로틴</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="">굿즈</a>
+                <div class="category_sub">
+                  <ul class="depth02">
+                    <li><a href="">생활용품</a></li>
+                    <li><a href="">악세서리</a></li>
+                    <li><a href="">장난감</a></li>
+                    <li><a href="">패션의류</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="">즉시/쿠폰 할인상품</a></li>
+              <li><a href="">기획팩</a></li>
+              <li><a href="">오뚜기 창립기념일</a></li>
             </ul>
           </div>
         </div>
-      </section>
 
-      <section class="main_content">
-        <div class="title">
-          <h2>이렇게 먹으면 더 맛있어요!</h2>
-        </div>
-        <div class="con_inner">
-          <div class="top">
-            <ul class="tab_list">
-              <li class="on">#카레해물부침개</li>
-              <li>#고추참치비빔면</li>
-              <li>#베이컨 로제떡볶이</li>
-              <li>#요즘미역냉국</li>
-              <li>#쨈 아이스크림</li>
-              <li>#방울토마토소바</li>
-              <li>#카레토마토솥밥</li>
-              <li>#라따뚜이 카레파스타</li>
-            </ul>
-          </div>
-          <div class="bottom">
-            <ul class="tab_con">
-              <li class="on">
-                <div class="img_box">
-                  <img src="./img/pro01.jpg" alt="" />
-                  <a href="" class="btn">레시피 확인하기</a>
-                </div>
-              </li>
-              <li>
-                <div class="img_box">
-                  <img src="./img/pro02.jpg" alt="" />
-                  <a href="">레시피 확인하기</a>
-                </div>
-              </li>
-              <li>
-                <div class="img_box">
-                  <img src="./img/pro03.jpg" alt="" />
-                  <a href="">레시피 확인하기</a>
-                </div>
-              </li>
-              <li>
-                <div class="img_box">
-                  <img src="./img/pro04.jpg" alt="" />
-                  <a href="">레시피 확인하기</a>
-                </div>
-              </li>
-              <li>
-                <div class="img_box">
-                  <img src="./img/pro05.jpg" alt="" />
-                  <a href="">레시피 확인하기</a>
-                </div>
-              </li>
-              <li>
-                <div class="img_box">
-                  <img src="./img/pro06.jpg" alt="" />
-                  <a href="">레시피 확인하기</a>
-                </div>
-              </li>
-              <li>
-                <div class="img_box">
-                  <img src="./img/pro07.jpg" alt="" />
-                  <a href="">레시피 확인하기</a>
-                </div>
-              </li>
-              <li>
-                <div class="img_box">
-                  <img src="./img/pro08.jpg" alt="" />
-                  <a href="">레시피 확인하기</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+        <nav class="gnb">
+          <ul>
+            <li><a href="">신제품</a></li>
+            <li><a href="">HEY!</a></li>
+            <li><a href="">이벤트</a></li>
+            <li><a href="">브랜드관</a></li>
+            <li><a href="">베스트</a></li>
+          </ul>
+        </nav>
 
-      <section class="main_sale">
-        <div class="title">
-          <h2>오늘이 지나면 생각나는 딜! 놓치지 마세요</h2>
+        <div class="search">
+          <form method="get" action="f">
+            <input type="text" placeholder="복작복작 짜슐랭 먹어보는건 어때요?" />
+            <button>
+              <i class="xi-search"></i>
+            </button>
+          </form>
         </div>
-        <div class="sale_inner">
-          <div id="timer"></div>
-          <a href="" class="add">
-            <span>전체보기</span>
-            <i class="xi-angle-right-min"></i>
-          </a>
-          <div class="sale_slide">
-            <div class="itm itm01">
+
+        <div class="bottom_icon">
+          <a href=""><i class="xi-user-o"></i></a>
+          <a href=""><i class="xi-heart-o"></i></a>
+          <a href=""><i class="xi-cart-o dd">
+              <small>0</small>
+            </i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="mainvisual">
+      <div class="mainslide">
+        <div class="itm itm01">
+          <div class="itm_slogan">
+            <p class="slo_tit">
+              유난히 입맛 없는 날엔<br />
+              스프 한 스푼 드셔보세요.
+            </p>
+            <p class="slo_con">
+              입맛 없는 날 따뜻한 스프 어때요?<br />
+              마음까지 따뜻해 지도록 최대 50% 할인해요.
+            </p>
+            <a href="">상품 바로가기</a>
+          </div>
+        </div>
+        <div class="itm itm02">
+          <div class="itm_slogan">
+            <p class="slo_tit">
+              비건도 맛있게,<br />
+              헬로 베지 :-)
+            </p>
+            <p class="slo_con">
+              건강을 생각하는 비건,<br />
+              누구나 쉽게 간단하게!
+            </p>
+            <a href="">상품 바로가기</a>
+          </div>
+        </div>
+        <div class="itm itm03">
+          <div class="itm_slogan">
+            <p class="slo_tit">
+              화제의 히모카와 우동까지<br />
+              오뚜기몰엔 다 있어요!
+            </p>
+            <p class="slo_con">
+              요리하기도 더운 날씨엔 간편한 한그릇<br />
+              20% 할인으로 시원하게 만나요.
+            </p>
+            <a href="">상품 바로가기</a>
+          </div>
+        </div>
+        <div class="itm itm04">
+          <div class="itm_slogan">
+            <p class="slo_tit">
+              오뚜기에 이런 면도 있어요!<br />
+              지금만 맛보는 한정라면
+            </p>
+            <p class="slo_con">
+              더워진 날씨에<br />
+              시원한 면요리 한그릇 어때요?
+            </p>
+            <a href="">상품 바로가기</a>
+          </div>
+        </div>
+        <div class="itm itm05">
+          <div class="itm_slogan">
+            <p class="slo_tit">
+              내 몸도 마음도<br />
+              가벼워지는 쉬운 방법
+            </p>
+            <p class="slo_con">
+              끝까지 사용해 더 깨끗한 용기로 재활용!<br />
+              하프 케찹/마요로 칼로리도 가볍게
+            </p>
+            <a href="">상품 바로가기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main_category">
+      <div class="category_inner">
+        <ul>
+          <li>
+            <a href="">
+              <img src="./img/icon01.png" alt="" />
+              <span>할인상품</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/icon02.png" alt="" />
+              <span>무료배송</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/icon03.png" alt="" />
+              <span>복작복작</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/icon04.png" alt="" />
+              <span>제주담음</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/icon05.png" alt="" />
+              <span>오뮤</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/icon06.png" alt="" />
+              <span>오뚜기프트</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/icon07.png" alt="" />
+              <span>X.O.만두</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/icon08.png" alt="" />
+              <span>타바스코</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/icon09.png" alt="" />
+              <span>옛날</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./img/icon10.png" alt="" />
+              <span>3분</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="main_best">
+      <div class="title">
+        <h2>지금 가장 잘 팔려요!</h2>
+        <a href="">
+          <span>전체보기</span>
+          <i class="xi-angle-right-min"></i>
+        </a>
+      </div>
+      <div class="wrap">
+        <div class="best_content">
+          <ul>
+            <li>
+              <a href="">
+                <div class="itm itm01">
+                  <img src="./img/best01.jpg" alt="" />
+                  <p>오뮤 가뿐한끼 현미밥 150G</p>
+                  <strong>1,180</strong>
+                  <span>원</span>
+                </div>
+              </a>
+              <div class="icon">
+                <span class="B">BEST</span>
+                <i class="xi-heart-o heart"></i>
+                <i class="xi-cart-o cart"></i>
+              </div>
+            </li>
+            <li>
+              <a href="">
+                <div class="itm itm02">
+                  <img src="./img/best02.jpg" alt="" />
+                  <p>진라면 매운맛 (120G x 5)</p>
+                  <strong>3,980</strong>
+                  <span>원</span>
+                </div>
+              </a>
+              <div class="icon">
+                <span class="B">BEST</span>
+                <i class="xi-heart-o heart"></i>
+                <i class="xi-cart-o cart"></i>
+              </div>
+            </li>
+            <li>
+              <a href="">
+                <div class="itm itm03">
+                  <img src="./img/best03.jpg" alt="" />
+                  <p>오뚜기밥 210G</p>
+                  <strong>1,380</strong>
+                  <span>원</span>
+                </div>
+              </a>
+              <div class="icon">
+                <span class="A">인기</span>
+                <i class="xi-heart-o heart"></i>
+                <i class="xi-cart-o cart"></i>
+              </div>
+            </li>
+            <li>
+              <a href="">
+                <div class="itm itm04">
+                  <div class="img_box">
+                    <img src="./img/best04.jpg" alt="" />
+                  </div>
+                  <p>히모카와우동 2인 396G</p>
+                  <strong>7,480</strong>
+                  <span>원</span>
+                </div>
+              </a>
+              <div class="icon">
+                <span class="B">BEST</span>
+                <i class="xi-heart-o heart"></i>
+                <i class="xi-cart-o cart"></i>
+              </div>
+            </li>
+            <li>
+              <a href="">
+                <div class="itm itm05">
+                  <img src="./img/best05.jpg" alt="" />
+                  <p>육개장 컵 104G</p>
+                  <strong>900</strong>
+                  <span>원</span>
+                </div>
+              </a>
+              <div class="icon">
+                <span class="A">인기</span>
+                <i class="xi-heart-o heart"></i>
+                <i class="xi-cart-o cart"></i>
+              </div>
+            </li>
+            <li>
+              <a href="">
+                <div class="itm itm06">
+                  <img src="./img/best06.jpg" alt="" />
+                  <p>참깨라면 용기 110G</p>
+                  <strong>1,280</strong>
+                  <span>원</span>
+                </div>
+              </a>
+              <div class="icon">
+                <span class="A">인기</span>
+                <i class="xi-heart-o heart"></i>
+                <i class="xi-cart-o cart"></i>
+              </div>
+            </li>
+            <li>
+              <a href="">
+                <div class="itm itm07">
+                  <img src="./img/best07.jpg" alt="" />
+                  <p>옛날 사골곰탕 350G</p>
+                  <strong>1,380</strong>
+                  <span>원</span>
+                </div>
+              </a>
+              <div class="icon">
+                <span class="B">BEST</span>
+                <i class="xi-heart-o heart"></i>
+                <i class="xi-cart-o cart"></i>
+              </div>
+            </li>
+            <li>
+              <a href="">
+                <div class="itm itm08">
+                  <img src="./img/best08.jpg" alt="" />
+                  <p>컵밥 톡톡김치알밥(증량) 222G</p>
+                  <strong>2,500</strong>
+                  <span>원</span>
+                </div>
+              </a>
+              <div class="icon">
+                <span class="B">BEST</span>
+                <i class="xi-heart-o heart"></i>
+                <i class="xi-cart-o cart"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="main_content">
+      <div class="title">
+        <h2>이렇게 먹으면 더 맛있어요!</h2>
+      </div>
+      <div class="con_inner">
+        <div class="top">
+          <ul class="tab_list">
+            <li class="on">#카레해물부침개</li>
+            <li>#고추참치비빔면</li>
+            <li>#베이컨 로제떡볶이</li>
+            <li>#요즘미역냉국</li>
+            <li>#쨈 아이스크림</li>
+            <li>#방울토마토소바</li>
+            <li>#카레토마토솥밥</li>
+            <li>#라따뚜이 카레파스타</li>
+          </ul>
+        </div>
+        <div class="bottom">
+          <ul class="tab_con">
+            <li class="on">
+              <div class="img_box">
+                <img src="./img/pro01.jpg" alt="" />
+                <a href="" class="btn">레시피 확인하기</a>
+              </div>
+            </li>
+            <li>
+              <div class="img_box">
+                <img src="./img/pro02.jpg" alt="" />
+                <a href="">레시피 확인하기</a>
+              </div>
+            </li>
+            <li>
+              <div class="img_box">
+                <img src="./img/pro03.jpg" alt="" />
+                <a href="">레시피 확인하기</a>
+              </div>
+            </li>
+            <li>
+              <div class="img_box">
+                <img src="./img/pro04.jpg" alt="" />
+                <a href="">레시피 확인하기</a>
+              </div>
+            </li>
+            <li>
+              <div class="img_box">
+                <img src="./img/pro05.jpg" alt="" />
+                <a href="">레시피 확인하기</a>
+              </div>
+            </li>
+            <li>
+              <div class="img_box">
+                <img src="./img/pro06.jpg" alt="" />
+                <a href="">레시피 확인하기</a>
+              </div>
+            </li>
+            <li>
+              <div class="img_box">
+                <img src="./img/pro07.jpg" alt="" />
+                <a href="">레시피 확인하기</a>
+              </div>
+            </li>
+            <li>
+              <div class="img_box">
+                <img src="./img/pro08.jpg" alt="" />
+                <a href="">레시피 확인하기</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="main_sale">
+      <div class="title">
+        <h2>오늘이 지나면 생각나는 딜! 놓치지 마세요</h2>
+      </div>
+      <div class="sale_inner">
+        <div id="timer"></div>
+        <a href="" class="add">
+          <span>전체보기</span>
+          <i class="xi-angle-right-min"></i>
+        </a>
+        <div class="sale_slide">
+          <div class="itm itm01">
+            <a href="">
               <div class="img_box">
                 <img src="./img/sale01.jpg" alt="" />
               </div>
@@ -661,8 +663,10 @@
                 <i class="xi-heart-o heart"></i>
                 <i class="xi-cart-o cart"></i>
               </div>
-            </div>
-            <div class="itm itm02">
+            </a>
+          </div>
+          <div class="itm itm02">
+            <a href="">
               <div class="img_box">
                 <img src="./img/sale02.jpg" alt="" />
               </div>
@@ -675,8 +679,10 @@
                 <i class="xi-heart-o heart"></i>
                 <i class="xi-cart-o cart"></i>
               </div>
-            </div>
-            <div class="itm itm03">
+            </a>
+          </div>
+          <div class="itm itm03">
+            <a href="">
               <div class="img_box">
                 <img src="./img/sale03.jpg" alt="" />
               </div>
@@ -689,8 +695,10 @@
                 <i class="xi-heart-o heart"></i>
                 <i class="xi-cart-o cart"></i>
               </div>
-            </div>
-            <div class="itm itm04">
+            </a>
+          </div>
+          <div class="itm itm04">
+            <a href="">
               <div class="img_box">
                 <img src="./img/sale04.jpg" alt="" />
               </div>
@@ -703,8 +711,10 @@
                 <i class="xi-heart-o heart"></i>
                 <i class="xi-cart-o cart"></i>
               </div>
-            </div>
-            <div class="itm itm05">
+            </a>
+          </div>
+          <div class="itm itm05">
+            <a href="">
               <div class="img_box">
                 <img src="./img/sale05.jpg" alt="" />
               </div>
@@ -716,8 +726,10 @@
               <div class="icon">
                 <i class="xi-bell-o"></i>
               </div>
-            </div>
-            <div class="itm itm06">
+            </a>
+          </div>
+          <div class="itm itm06">
+            <a href="">
               <div class="img_box">
                 <img src="./img/sale06.jpg" alt="" />
               </div>
@@ -728,8 +740,10 @@
                 <i class="xi-heart-o heart"></i>
                 <i class="xi-cart-o cart"></i>
               </div>
-            </div>
-            <div class="itm itm07">
+            </a>
+          </div>
+          <div class="itm itm07">
+            <a href="">
               <div class="img_box">
                 <img src="./img/sale07.jpg" alt="" />
               </div>
@@ -742,8 +756,10 @@
                 <i class="xi-heart-o heart"></i>
                 <i class="xi-cart-o cart"></i>
               </div>
-            </div>
-            <div class="itm itm08">
+            </a>
+          </div>
+          <div class="itm itm08">
+            <a href="">
               <div class="img_box">
                 <img src="./img/sale08.jpg" alt="" />
               </div>
@@ -756,72 +772,78 @@
                 <i class="xi-heart-o heart"></i>
                 <i class="xi-cart-o cart"></i>
               </div>
-            </div>
-          </div>
-          <div class="arrows">
-            <i class="xi-angle-left left"></i>
-            <i class="xi-angle-right right"></i>
+            </a>
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="kakao">
-        <a href=""><img src="./img/kakao.png" alt="" /></a>
-      </div>
-      <div class="footer_inner">
-        <div class="left">
-          <ul class="ottogi">
-            <li><a href="">오뚜기몰 존재이유</a></li>
-            <li><a href="">고객센터</a></li>
-            <li><a href="">이용약관</a></li>
-            <li>
-              <a href="" class="bold">개인정보처리방침</a>
-            </li>
-            <li><a href="">대량주문문의</a></li>
-          </ul>
-          <address>
-            <p>
-              <span>대표이사 황성만</span>
-              <span>14060 경기 안양시 동안구 흥안대로 405 (평촌동)</span>
-            </p>
-            <p>
-              <span>사업자등록번호 138-81-03238 사업자정보확인</span>
-              <span>통신판매업신고 제 2003-경기안양-169호</span>
-            </p>
-            <p>
-              <span>건강기능식품 판매업 신고 제 2007-00002호</span>
-              <span>개인정보 보호책임 및 청소년보호 책임자 서흥덕</span>
-            </p>
-          </address>
-          <div class="nice">
-            <p>
-              고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서
-              가입한<br />
-              구매안전(에스크로) 서비스를 이용하실 수 있습니다.
-              <a href="" class="bold">서비스 가입사실 확인</a>
-            </p>
-            <img src="./img/icon_nice.png" alt="" />
-          </div>
-          <div class="copy">
-            <p>Copyright 2020-2023 Ottogi Corp. All Rights Reserved.</p>
-            <img src="./img/icon_company.png" class="com" alt="" />
-            <img src="./img/icon_okitchen.png" class="oki" alt="" />
-          </div>
-        </div>
-        <div class="right">
-          <div class="tell">
-            <span>고객센터</span>
-            <i class="xi-call"></i>
-            <strong><a href="">080-433-8888</a> </strong>
-            <p>
-              평일 09:00 - 17:00 <br />
-              점심시간 12:30 - 13:00 <br />
-              토/일/공휴일 휴무
-            </p>
-          </div>
+        <div class="arrows">
+          <i class="xi-angle-left left"></i>
+          <i class="xi-angle-right right"></i>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="kakao">
+      <a href="">
+        <div class="kakao_inner">
+          <p>카카오 플러스 친구 추가하고 혜택소식 받아보세요!</p>
+        </div>
+      </a>
+    </div>
+    <div class="footer_inner">
+      <div class="left">
+        <ul class="ottogi">
+          <li><a href="">오뚜기몰 존재이유</a></li>
+          <li><a href="">고객센터</a></li>
+          <li><a href="">이용약관</a></li>
+          <li>
+            <a href="" class="bold">개인정보처리방침</a>
+          </li>
+          <li><a href="">대량주문문의</a></li>
+        </ul>
+        <address>
+          <p>
+            <span>대표이사 황성만</span>
+            <span>14060 경기 안양시 동안구 흥안대로 405 (평촌동)</span>
+          </p>
+          <p>
+            <span>사업자등록번호 138-81-03238 사업자정보확인</span>
+            <span>통신판매업신고 제 2003-경기안양-169호</span>
+          </p>
+          <p>
+            <span>건강기능식품 판매업 신고 제 2007-00002호</span>
+            <span>개인정보 보호책임 및 청소년보호 책임자 서흥덕</span>
+          </p>
+        </address>
+        <div class="nice">
+          <p>
+            고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서
+            가입한<br />
+            구매안전(에스크로) 서비스를 이용하실 수 있습니다.
+            <a href="" class="bold">서비스 가입사실 확인</a>
+          </p>
+          <img src="./img/icon_nice.png" alt="" />
+        </div>
+        <div class="copy">
+          <p>Copyright 2020-2023 Ottogi Corp. All Rights Reserved.</p>
+          <img src="./img/icon_company.png" class="com" alt="" />
+          <img src="./img/icon_okitchen.png" class="oki" alt="" />
+        </div>
+      </div>
+      <div class="right">
+        <div class="tell">
+          <span>고객센터</span>
+          <i class="xi-call"></i>
+          <strong><a href="">080-433-8888</a> </strong>
+          <p>
+            평일 09:00 - 17:00 <br />
+            점심시간 12:30 - 13:00 <br />
+            토/일/공휴일 휴무
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
